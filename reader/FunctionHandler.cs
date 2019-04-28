@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using CodeHollow.FeedReader;
 
 namespace Function
 {
@@ -9,10 +10,6 @@ namespace Function
 
             var feed = FeedReader.Read("https://codehollow.com/feed");
 
-            // Console.WriteLine("Feed Title: " + feed.Title);
-            // Console.WriteLine("Feed Description: " + feed.Description);
-            // Console.WriteLine("Feed Image: " + feed.ImageUrl);
-            // ...
             var items ="";
             foreach(var item in feed.Items)
             {
