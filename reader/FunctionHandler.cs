@@ -8,7 +8,7 @@ namespace Function
     {
         public string Handle(string input) {
 
-            var feed = FeedReader.Read("http://www.chicagotribune.com/news/local/breaking/rss2.0.xml");
+            var feed = FeedReader.Read("http://feeds.bbci.co.uk/news/technology/rss.xml");
 
             var items ="";
             foreach(var item in feed.Items)
