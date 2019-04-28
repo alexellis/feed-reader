@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using CodeHollow.FeedReader;
+using System.Linq;
 
 namespace Function
 {
@@ -10,8 +11,8 @@ namespace Function
 
             var feed = FeedReader.Read("http://feeds.bbci.co.uk/news/technology/rss.xml");
 
-            var items ="";
-            foreach(var item in feed.Items)
+            var items = "";
+            foreach(var item in feed.Items.First(10))
             {
                 items = items + item.Title + System.Environment.NewLine;
             }
