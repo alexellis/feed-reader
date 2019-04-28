@@ -13,7 +13,7 @@ namespace Function
             var items ="";
             foreach(var item in feed.Items)
             {
-                items = items + item.Title + " - " + item.Link+System.Environment.NewLine;
+                items = items + item.Title + System.Environment.NewLine;
             }
 
             return items;
