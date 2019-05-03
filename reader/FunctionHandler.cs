@@ -12,7 +12,7 @@ namespace Function
             var feed = FeedReader.Read("http://feeds.bbci.co.uk/news/technology/rss.xml");
 
             var items = "";
-            foreach(var item in feed.Items.Take(10))
+            foreach(var item in feed.Items.Take(20))
             {
                 items = items + item.Title + System.Environment.NewLine;
             }
